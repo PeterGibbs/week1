@@ -3,7 +3,7 @@ const getBooks = require('../utils/googlebooks')
 
 module.exports = async (args) => {
     const spinner = ora().start()
-
+    
     try {
         const phrase = args.phrase || args.p;
         const books = await getBooks(phrase);
