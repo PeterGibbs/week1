@@ -1,0 +1,21 @@
+"status": 200, --200 Means "OK"
+"statusText": "OK",
+"headers": {
+        "expires": "Mon, 04 Feb 2019 05:14:17 GMT", -Our connection expires as soon as we get it. Since we have everything we need. No need to keep it alive
+        "date": "Mon, 04 Feb 2019 05:14:17 GMT", -Timestamp
+        "cache-control": "private, max-age=0, must-revalidate, no-transform", 
+        "etag": "\"IUREzboS_XZycecz4xfru1ipYfo/5pn_PvF1HUkKtrUMYuMmQ1k4HZ8\"", -Hash of body
+        "vary": "Origin, X-Origin", 
+        "content-type": "application/json; charset=UTF-8", -What format the server gave us the data in
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "SAMEORIGIN",
+        "x-xss-protection": "1; mode=block",
+        "content-length": "38533",
+        "server": "GSE",
+        "alt-svc": "quic=\":443\"; ma=2592000; v=\"44,43,39\"",
+        "connection": "close" --Dont keep the connection alive after recieving this
+    },
+    "requestHeader": {
+        "Accept": "application/json, text/plain, */*", -What format we want the data. In this case its json.
+        "User-Agent": "axios/0.18.0" - Sorta like the 'web browser' we are using. In this case we requested via the axios libary
+    }
